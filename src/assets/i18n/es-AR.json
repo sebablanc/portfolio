@@ -1,0 +1,25 @@
+{
+    "common": {
+        "backend": "Backend",
+        "frontend": "Frontend",
+        "realizationDate": "Fecha de realización",
+        "technologies": "Tecnologías",
+        "home": "Home",
+        "projects": "Proyectos",
+        "contact": "Contacto",
+        "aboutMe": "Sobre mí",
+        "techSkills": "Tech Skills"
+    },
+    "components": {
+        "projectPresentation": {
+            "usedTechnologies": "Tecnologías utilizadas en el proyecto"
+        }
+    },
+    "pages": {
+        "home": {
+            "presentation": "<p>¡Hola! Me llamo Seba.</p><p>Soy Analista en Sistemas y Desarrollador Web.</p><p>Vivo en Concepción del Uruguay, Entre Ríos, Argentina.</p><p>Te invito a que continúes navegando y descubras el fascinante mundo que me gustaría crear y que tecontactes conmigo, si eso es de tu agrado.</p>",
+            "downloadCv": "Descargar CV",
+            "contactme": "Contactame"
+        }
+    }
+}

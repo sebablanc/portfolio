@@ -1,0 +1,75 @@
+@use '../../stylesheets/mixins' as mixins;
+
+#circleTitle {
+    position: absolute;
+    width: 107px;
+    height: 29px;
+    left: 196px;
+    top: 244px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+#circle {
+    animation-name: spin;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-bottom: 20px;
+
+    div {
+        display: block;
+        max-width: 100%;
+        border-radius: 50%;
+
+        img{
+            width: 90%;
+        }
+    }
+}
+
+@media all and (min-width: 1291px){
+    #circle {
+        margin: 4em auto 0;
+        @include mixins.on-circle($item-count: 10, $circle-size: 24em, $item-size: 6em, $left-position: 55px);
+    }
+}
+
+@media all and (min-width: 991px) and (max-width: 1291px){
+    #circle {
+        margin: 4em auto 0;
+        @include mixins.on-circle($item-count: 10, $circle-size: 24em, $item-size: 6em, $left-position: 55px);
+    }
+}
+
+@media all and (max-width: 991px){
+    #circleTitle {
+        left: 0px;
+        top: 0;
+        position: relative;
+    }
+
+    #circle {
+        display: flex;
+        animation: none;
+
+        div {
+            display: block;
+            margin: 0 10px;
+            width: 50%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 768px){
+    #circle {
+        display: grid;
+        grid-template-columns: repeat(5, 20vw);
+        gap: 20px 0;
+    }
+}

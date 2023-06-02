@@ -1,0 +1,22 @@
+-<app-main-layout>
+    <app-section-layout [sectionId]="'projectDetailsSection'">
+        <app-project-presentation-section [project]="project"></app-project-presentation-section>
+    </app-section-layout>
+    <app-section-layout [sectionId]="'projectImagesSection'">
+        <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+            <div ngxSlickItem *ngFor="let slide of project?.projectImages" class="slide">
+                <div class="open-img-container"></div>
+                    <button class="open-img" (click)="openImg(slide)" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop"></button>
+                <img src="assets/img/{{project?.imagesFolder}}//{{ slide }}" alt="" width="90%">
+            </div>
+        </ngx-slick-carousel>
+    </app-section-layout>
+
+
+</app-main-layout>
+
+<!-- Modal -->
+<app-modal-layout [modalSize]="project?.isWeb ? modalSize.XL : modalSize.SM ">
+    <img id="modal-img" [src]="modalImg" alt="">
+</app-modal-layout>

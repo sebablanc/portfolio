@@ -1,0 +1,35 @@
+#proyectos {
+    position: relative;
+    height: auto;
+    padding: 20px;
+    
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .projects-container {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        gap: 20px 0;
+        justify-items: center;
+    }
+}
+
+@media all  and (min-width: 753px) and (max-width: 1113px){
+    #proyectos {
+        
+        .projects-container {
+            grid-template-columns: repeat(2, auto);
+        }
+    }
+}
+
+@media all and (max-width: 752px){
+    #proyectos {
+        
+        .projects-container {
+            grid-template-columns: repeat(1, auto);
+        }
+    }
+}

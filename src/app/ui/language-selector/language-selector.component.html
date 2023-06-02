@@ -1,0 +1,7 @@
+<div id="language-selector-container">
+    
+        <li *ngFor="let language of languageOptions" (click)="emitLanguage(language.option)" [ngClass]="{'isActive': languageSelected == language.option}">
+            <p>{{ language.label }}</p>
+        </li>
+    
+</div>

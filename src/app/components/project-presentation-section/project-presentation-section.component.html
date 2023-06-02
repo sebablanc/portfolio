@@ -1,0 +1,15 @@
+<h1 *ngIf="project" id="project-title">{{ project.title }}</h1>
+<div *ngIf="project" [id]="project.isWeb ? 'detail-section-container' : 'detail-section-container-mobile-project'">
+    <img src="assets/img/{{project.imagesFolder}}/page-complete.png" alt="project-img" />
+    <div>
+        <p>{{ project.description }}</p>
+        <p>{{ 'common.realizationDate' | translate }}: <span class="white-color">{{ project.fecha }}</span></p>
+    </div>
+</div>
+<h2 *ngIf="project" id="tecnologias-title">{{ 'components.projectPresentation.usedTechnologies' | translate }}</h2>
+<div id="tecnologias-logo-container">
+    <div class="tecnologia-logo" *ngFor="let tecnology of project?.tecnologies">
+        <span id="tecnologia-name">{{ tecnology }}</span>
+        <img src="assets/img/logos/{{ tecnology | lowercase }}-logo.png" alt="">
+    </div>
+</div>

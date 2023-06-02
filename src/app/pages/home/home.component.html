@@ -1,0 +1,32 @@
+<app-main-layout>
+    <app-section-layout [sectionId]="'aboutMeSection'">
+        <div class="container-fluid section1-container">
+            <div id="presentation" [innerHTML]="'pages.home.presentation' | translate"></div>
+            <div id="pic-container">
+                <img src="assets/img/sebastian_blanc.jpg" alt="seba blanc pic">
+                <a class="btn" href="assets/cv/cv.pdf" download="Sebastian Blanc - CV.pdf">
+                    <img src="assets/img/download.png" alt="">
+                    {{ 'pages.home.downloadCv' | translate }}
+                </a>
+            </div>
+        </div>
+    </app-section-layout>
+    <app-section-layout [sectionId]="'techSkillsSection'">
+        <div id="techSkills">
+            <app-front-circle-spin></app-front-circle-spin>
+            <img id="developer-img" src="assets/img/developer-working.png" alt="dev-image" />
+            <app-back-circle-spin></app-back-circle-spin>
+        </div>
+    </app-section-layout>
+    <app-section-layout [sectionId]="'proyectosSection'">
+        <app-projects-section></app-projects-section>
+    </app-section-layout>
+    <app-section-layout [sectionId]="'contactoSection'">
+        <div id="contacto">
+            <h2>{{ 'pages.home.contactme' | translate }}</h2>
+            <a class="red-social-button" *ngFor="let rs of headerRSItems" [href]="rs.link" target="_blank">
+                <img [src]="rs.logo" alt="">
+            </a>
+        </div>
+    </app-section-layout>
+</app-main-layout>

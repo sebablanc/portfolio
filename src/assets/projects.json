@@ -1,0 +1,178 @@
+[
+    {
+        "id": 1,
+        "title": "WatchApp",
+        "fecha": "01/06/2023",
+        "imagesFolder": "watchapp",
+        "tecnologies": [
+            "Angular",
+            "NestJS",
+            "MongoDB",
+            "Docker"
+        ],
+        "description": "Réplica de Youtube, se conecta a esta plataforma mediante una API para traer los videos. Por otro lado posee un registro y logueo a través de NestJS, utilizando como medida de seguridad JWT Token. La biblioteca del usuario, así como las credenciales, se manejan a través de todo el poder de MongoDB.",
+        "projectImages": [
+            "page-complete.png",
+            "01-search-page.png",
+            "02-library.png",
+            "03-login.png",
+            "04-registration.png"
+        ],
+        "isWeb": true
+    },
+    {
+        "id": 2,
+        "title": "Fictional Cinema",
+        "fecha": "10/04/2023",
+        "imagesFolder": "fictional-cinema",
+        "tecnologies": [
+            "Ionic",
+            "Angular",
+            "Docker"
+        ],
+        "description": "Aplicación en la cual se puede cargar, modificar y eliminar películas. Además se puede votar las películas y en base a esto, se genera una sección en donde se muestran aquellas más votadas. También posee una sección donde se muestran 5 sugerencias randómicas de películas a mirar.",
+        "projectImages": [
+            "1-login.png",
+            "page-complete.png",
+            "2-panel.png",
+            "3-movie-detail.png",
+            "4-movie-edition.png"
+        ],
+        "isWeb": false
+    },
+    {
+        "id": 3,
+        "title": "DR Computers Web",
+        "fecha": "16/09/2021",
+        "imagesFolder": "dr-web",
+        "tecnologies": [
+            "Angular",
+            "Firebase",
+            "Docker"
+        ],
+        "description": "Este proyecto se llevó a cabo para el Instituto de Computación \"DR Computers\", ubicado en la ciudad de Concepción del Uruguay, Entre Ríos, Argentina. El mismo tiene como objetivo hacer llegar a los visitantes del sitio las distintas propuestas que ofrece el instituto; además, deja a disposición los distintos canales de comunicación para consultas y sugerencias.",
+        "projectImages": [
+            "page-complete.png",
+            "1-who-we-are.png",
+            "2-courses-list.png",
+            "3-login.png"
+        ],
+        "isWeb": true
+    },
+    {
+        "id": 4,
+        "title": "Superheroes en Angular",
+        "fecha": "16/09/2021",
+        "imagesFolder": "superheroes-angular",
+        "tecnologies": [
+            "Angular",
+            "Docker"
+        ],
+        "description": "Proyecto realizado para dictar un workshop sobre Angular. En este workshop la idea era mostrar las características más nuevas y formas de implementarlas para sacar el mayor funcionamiento de este Framework.",
+        "projectImages": [
+            "page-complete.png",
+            "1-superheros-pages.png",
+            "2-create-character.png",
+            "3-modify-character.png"
+        ],
+        "isWeb": true
+    },
+    {
+        "id": 5,
+        "title": "Superheroes",
+        "fecha": "23/06/2021",
+        "imagesFolder": "superheroes",
+        "tecnologies": [
+            "React",
+            "NodeJS",
+            "MongoDB",
+            "Redis",
+            "Docker"
+        ],
+        "description": "Proyecto similar a Superheroes en Angular, realizado en React y con base de datos en MongoDB",
+        "projectImages": [
+            "page-complete.png",
+            "1-marvel.png",
+            "2-dc.png",
+            "3-search.png",
+            "4-character-edition.png"
+        ],
+        "isWeb": true
+    },
+    {
+        "id": 6,
+        "title": "Mandalorian en Flask",
+        "fecha": "23/06/2021",
+        "imagesFolder": "mandalorian-flask",
+        "tecnologies": [
+            "Python",
+            "Flask",
+            "Redis",
+            "Docker"
+        ],
+        "description": "Proyecto realizado con el fin de aprender el framework Flask y la Base de Datos Redis. Simula un sitio donde se puede rentar episodios de la serie \"The mandalorian\"",
+        "projectImages": [
+            "page-complete.png",
+            "1-changed-states.png",
+            "2-rent-episode.png"
+        ],
+        "isWeb": true
+    },
+    {
+        "id": 7,
+        "title": "Star Wars React",
+        "fecha": "23/06/2021",
+        "imagesFolder": "star-wars-react",
+        "tecnologies": [
+            "React",
+            "Redis",
+            "Docker"
+        ],
+        "description": "Proyecto realizado con el fin de aprender la librearía React y la Base de Datos Redis. Simula un sitio donde se puede agregar y eliminar personajes de Star Wars por espisodios. Además existe una pantalla de búsqueda donde lista los personajes según el episodio seleccionado.",
+        "projectImages": [
+            "page-complete.png",
+            "1-add-character.png",
+            "2-delete-character.png",
+            "3-search-characters.png"
+        ],
+        "isWeb": true
+    },
+    {
+        "id": 8,
+        "title": "Geoplaces CdelU",
+        "fecha": "21/05/2021",
+        "imagesFolder": "geoplaces-cdelu",
+        "tecnologies": [
+            "Angular",
+            "NodeJS",
+            "Redis",
+            "Docker"
+        ],
+        "description": "En este proyecto se puede mantener una base de datos utilizando redis de distintos lugares. Diseñado principalmente para crear lugares a mi ciudad de residencia, no es impedimento para agregar el lugar que se desee. Además posee una sección de \"¿Qué tengo cerca?\" la cual muestra los locales cargados dentro de la base más cercano a la posición actual.",
+        "projectImages": [
+            "page-complete.png",
+            "1-nearest-item.png",
+            "2-adding-item.png"
+        ],
+        "isWeb": true
+    },
+    {
+        "id": 9,
+        "title": "Forecast",
+        "fecha": "24/04/2021",
+        "imagesFolder": "forecast-project",
+        "tecnologies": [
+            "Angular",
+            "NodeJS",
+            "Docker"
+        ],
+        "description": "Proyecto en el cual se puede consultar el pronóstico en distintas partes del mundo. Para poder realizar esto, se utilizan distintas APIs tanto para consultar los países, sus ciudades y latitudes y longitudes, así como también, obtener la información del pronóstico en el momento consultado y 5 días posteriores.",
+        "projectImages": [
+            "1-login.png",
+            "2-logged.png",
+            "3-close session.png",
+            "4-search.png"
+        ],
+        "isWeb": true
+    }
+]

@@ -1,0 +1,8 @@
+<div *ngIf="project && project.id > 0" id="project-card-container" (click)="cardClicked.emit(true)">
+    <h4>{{ project.title }}</h4>
+    <div id="tecnologies-place">
+        <div class="logo-container" *ngFor="let tecnology of project.tecnologies | slice:0:3">
+            <img src="assets/img/logos/{{ tecnology | lowercase }}-logo.png" alt="">
+        </div>
+    </div>
+</div>

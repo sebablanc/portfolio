@@ -1,0 +1,25 @@
+{
+    "common": {
+        "backend": "Backend",
+        "frontend": "Frontend",
+        "realizationDate": "Realization date",
+        "technologies": "Technologies",
+        "home": "Home",
+        "projects": "Projects",
+        "contact": "Contact {{value}}",
+        "aboutMe": "About me",
+        "techSkills": "Tech Skills"
+    },
+    "components": {
+        "projectPresentation": {
+            "usedTechnologies": "Technologies used in the project"
+        }
+    },
+    "pages": {
+        "home": {
+            "presentation": "<p>Hi! I'm Seba.</p><p>I'm a Systems Analyst and Web Developer.</p><p>I live in Concepción del Uruguay, Entre Ríos, Argentina.</p><p>I invite you to continue browsing and discover the fascinating world that I would like to create and to contact me, if that is to your liking.</p>",
+            "downloadCv": "Download Resume",
+            "contactme": "Contact me"
+        }
+    }
+}

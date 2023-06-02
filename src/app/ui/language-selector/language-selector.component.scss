@@ -1,0 +1,36 @@
+#language-selector-container {
+    display: flex;
+    cursor: pointer;
+    li {
+        padding: 6px 20px;
+        color: #E3DAC9;
+        border: 1px solid #E3DAC9;
+        background-color: #000000;
+        transition: background-color 0.1s ease-in-out;
+
+        p{
+            margin: 0;
+        }
+    }
+    
+    li:first-child {
+        border-radius: 16px 0 0 16px;
+    }
+
+    li:last-child {
+        border-radius: 0 16px 16px 0;
+    }
+    
+    .isActive {
+        border: none;
+        background-color: #E3DAC9;
+        color: #000000;
+
+    }
+}
+
+@media all and (max-width: 915px) {
+    #language-selector-container{
+        margin-top: 10px;
+    }
+}

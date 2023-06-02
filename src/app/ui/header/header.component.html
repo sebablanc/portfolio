@@ -1,0 +1,14 @@
+<header class="navbar navbar-expand-md navbar-dark bg-dark">
+    <p>Sebastián Blanc</p>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <nav class="collapse navbar-collapse nav justify-content-md-end " id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-md-0">
+            <app-nav-item *ngFor="let navItem of navItems" [title]="navItem.title | translate:navItem.value"
+                [navTo]="navItem.url"></app-nav-item>
+        </ul>
+        <app-language-selector (language)="changeLanguage($event)"></app-language-selector>
+    </nav>
+</header>

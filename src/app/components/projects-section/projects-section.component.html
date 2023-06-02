@@ -1,0 +1,6 @@
+<div id="proyectos">
+    <h1>{{ 'common.projects' | translate }}</h1>
+    <div class="projects-container">
+        <app-project-card *ngFor="let pro of projects" [project]="pro" (clicked)="navToProjectDetail(pro.id)"></app-project-card>
+    </div>
+</div>
